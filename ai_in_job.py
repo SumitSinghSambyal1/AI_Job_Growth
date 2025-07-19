@@ -39,7 +39,7 @@ st.markdown("""
         border-radius: 8px;
     }
     h1, h2, h3 {
-        color: #1E3A8A;
+        color: #fff;
     }
 </style>
 """, unsafe_allow_html=True)
