@@ -55,8 +55,8 @@ except FileNotFoundError:
 
 
 # App ka title
-st.title("🤖 AI Job Growth Predictor")
-st.write("Yeh app AI se sambandhit jobs ke growth potential (Growth, Decline, ya Stable) ko predict karta hai.")
+st.title("AI Job Growth Predictor")
+st.write("We can predict whether there will be job growth or decline due to AI in different sectors")
 
 # User se input lene ke liye columns banayein
 col1, col2, col3 = st.columns(3)
@@ -89,7 +89,7 @@ with col3:
 
 
 # Predict button
-if st.button("📈 Predict Job Growth"):
+if st.button("Predict Job Growth"):
     # User input se ek DataFrame banayein
     input_data = {
         'Job_Title': [job_title],
@@ -115,7 +115,7 @@ if st.button("📈 Predict Job Growth"):
     prediction_encoded = model.predict(input_df_encoded)
     prediction = le_growth.inverse_transform(prediction_encoded)
 
-    st.subheader("🔮 Prediction Result:")
+    st.subheader("Prediction Result:")
     if prediction[0] == 'Growth':
         st.success(f"**Growth Potential: {prediction[0]}**")
         #st.balloons()
