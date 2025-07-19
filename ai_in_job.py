@@ -13,7 +13,6 @@ st.markdown("""
     }
     .stApp {
         background-color: #000;
-        text-color: #fff;
     }
     .stButton > button {
         background-color: #4CAF50 !important;
@@ -39,7 +38,7 @@ st.markdown("""
         border-radius: 8px;
     }
     h1, h2, h3 {
-        color: #fff !important;
+        color: #00ffff !important;
     }
 </style>
 """, unsafe_allow_html=True)
